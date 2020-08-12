@@ -39,7 +39,7 @@ public class Main {
 
         // calculate the words per minute
         int numChars = typedWords.length();
-        int wpm = (int) (((numChars / 5) / seconds) * 60);
+        int wpm = (int) ((((double) numChars / 5) / seconds) * 60);
         System.out.println("Your WPM is " + wpm + "!");
         s.close();
 
